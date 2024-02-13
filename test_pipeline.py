@@ -35,3 +35,5 @@ your_next_task = BashOperator(
     bash_command='echo "Hello, World!"',
     dag=dag,
 )
+
+sql_sensor_task >> your_next_task
